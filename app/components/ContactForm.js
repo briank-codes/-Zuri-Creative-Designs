@@ -6,6 +6,7 @@ import { Send, CheckCircle2, AlertCircle } from "lucide-react";
 export default function ContactForm() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState("idle"); // idle | sending | sent | error
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -35,12 +36,16 @@ export default function ContactForm() {
 
       if (data.success) {
         setStatus("sent");
+        setErrorMessage("");
         setForm({ name: "", email: "", message: "" });
       } else {
-        throw new Error(data.message || "Something went wrong");
+        const message = data.message || "Something went wrong";
+        setErrorMessage(message);
+        setStatus("error");
       }
     } catch (err) {
       setStatus("error");
+      setErrorMessage(err?.message || "Something went wrong. Please try again.");
     }
   };
 
@@ -114,8 +119,7 @@ export default function ContactForm() {
 
         {status === "error" && (
           <p className="contact-form-note contact-form-note-error">
-            <AlertCircle size={14} /> Something went wrong. Please try again, or
-            WhatsApp us directly.
+            <AlertCircle size={14} /> {errorMessage || "Something went wrong. Please try again, or WhatsApp us directly."}
           </p>
         )}
       </div>
