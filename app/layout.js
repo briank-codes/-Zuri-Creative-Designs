@@ -23,6 +23,13 @@ export const metadata = {
   },
   description:
     "We build modern websites and software that help businesses grow — for clients in Kenya and worldwide.",
+  keywords: [
+    "web design Kenya",
+    "Nyahururu web developer",
+    "web design agency",
+    "software development Kenya",
+    "WiFi billing system",
+  ],
   openGraph: {
     title: "Zuri Creative Designs | Web & Software Development",
     description:
@@ -37,7 +44,7 @@ export const metadata = {
         alt: "Zuri Creative Designs",
       },
     ],
-    locale: "en_US",
+    locale: "en_KE",
     type: "website",
   },
   twitter: {

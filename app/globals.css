@@ -1530,3 +1530,21 @@ html {
     gap: 0.75rem;
   }
 }
+
+.contact-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 5rem;
+  text-align: center;
+}
+
+.contact-page-header h1 {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-page-header p {
+  font-size: 1.05rem;
+  color: rgba(0, 0, 0, 0.65);
+}
