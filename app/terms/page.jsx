@@ -1,6 +1,14 @@
 export const metadata = {
-  title: "Terms of Service | Zuri Creative Designs",
-  description: "The terms governing web development, mobile app, branding, and SEO projects undertaken by Zuri Creative Designs.",
+  title: "Terms of Service",
+  description:
+    "Terms and conditions for using Zuri Creative Designs' website and services.",
+  alternates: {
+    canonical: "/terms",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function Terms() {

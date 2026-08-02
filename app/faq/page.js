@@ -3,8 +3,19 @@ import FaqAccordion from "./FaqAccordion";
 import { FAQ_ITEMS } from "./faqData";
 
 export const metadata = {
-  title: "FAQ | Zuri Creative Designs",
-  description: "Answers to common questions about working with Zuri Creative Designs — pricing, timelines, process, and support.",
+  title: "Frequently Asked Questions",
+  description:
+    "Answers to common questions about working with Zuri Creative Designs — pricing, process, timelines, and support.",
+  alternates: {
+    canonical: "/faq",
+  },
+  openGraph: {
+    title: "FAQ | Zuri Creative Designs",
+    description:
+      "Common questions about our web design and development services, answered.",
+    url: "https://zuricreativedesigns.com/faq",
+    type: "website",
+  },
 };
 
 export default function FAQ() {

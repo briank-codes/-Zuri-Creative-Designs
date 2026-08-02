@@ -10,8 +10,19 @@ import ecommerceImg from '../../public/services/e-commerce.png';
 import uiuxImg from '../../public/services/ui-ux-design.png';
 
 export const metadata = {
-  title: "Services | Zuri Creative Designs",
-  description: "Web development, mobile apps, branding, SEO, and e-commerce solutions for businesses in Kenya and worldwide.",
+  title: "Our Services",
+  description:
+    "Full-stack web development, mobile app development, branding, SEO, and WiFi billing systems — tailored solutions from Zuri Creative Designs.",
+  alternates: {
+    canonical: "/services",
+  },
+  openGraph: {
+    title: "Services | Zuri Creative Designs",
+    description:
+      "Web development, mobile apps, branding, SEO, and WiFi billing systems for growing businesses.",
+    url: "https://zuricreativedesigns.com/services",
+    type: "website",
+  },
 };
 
 export default function Services() {

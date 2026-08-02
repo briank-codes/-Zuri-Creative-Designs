@@ -7,6 +7,22 @@ import Footer from './components/Footer';
 import zuriPhoto from '../public/zuri.jpeg';
 import designsPhoto from '../public/designs.jpeg';
 
+export const metadata = {
+  title: "Zuri Creative Designs | Web & Software Development in Kenya",
+  description:
+    "Zuri Creative Designs builds modern, high-performing websites and software for businesses in Kenya and worldwide. Full-stack development, mobile apps, branding, SEO, and WiFi billing systems.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Zuri Creative Designs | Web & Software Development in Kenya",
+    description:
+      "Modern websites and software that help businesses grow — for clients in Kenya and worldwide.",
+    url: "https://zuricreativedesigns.com",
+    type: "website",
+  },
+};
+
 export default function Home() {
   return (
     <main>

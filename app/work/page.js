@@ -9,8 +9,19 @@ import smartShambaImg from '../../public/portfolio/smart-shamba.jpeg';
 import pesayanguImg from '../../public/portfolio/pesayangu-app.jpeg';
 
 export const metadata = {
-  title: "Our Work | Zuri Creative Designs",
-  description: "A look at real projects built by Zuri Creative Designs — for real estate, restaurants, tourism, and more.",
+  title: "Our Work",
+  description:
+    "Explore recent web design and software projects delivered by Zuri Creative Designs for clients in Kenya and abroad.",
+  alternates: {
+    canonical: "/work",
+  },
+  openGraph: {
+    title: "Our Work | Zuri Creative Designs",
+    description:
+      "A showcase of websites and software built by Zuri Creative Designs.",
+    url: "https://zuricreativedesigns.com/work",
+    type: "website",
+  },
 };
 
 export default function Work() {

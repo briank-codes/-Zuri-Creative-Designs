@@ -1,6 +1,14 @@
 export const metadata = {
-  title: "Privacy Policy | Zuri Creative Designs",
-  description: "How Zuri Creative Designs collects, uses, and protects information submitted through this website.",
+  title: "Privacy Policy",
+  description:
+    "Read the privacy policy for Zuri Creative Designs, outlining how we handle client and visitor data.",
+  alternates: {
+    canonical: "/privacy",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function Privacy() {

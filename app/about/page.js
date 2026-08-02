@@ -4,6 +4,22 @@ import FounderModal from '../components/FounderModal';
 import Footer from '../components/Footer';
 import brianPhoto from '../../public/about/brian.jpg';
 
+export const metadata = {
+  title: "About Us",
+  description:
+    "Learn about Zuri Creative Designs — a Kenya-based web design and software development agency helping local and international businesses build a strong digital presence.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About Zuri Creative Designs",
+    description:
+      "The team and story behind Zuri Creative Designs, a web design agency based in Nyahururu, Kenya.",
+    url: "https://zuricreativedesigns.com/about",
+    type: "website",
+  },
+};
+
 export default function About() {
   return (
     <main>
