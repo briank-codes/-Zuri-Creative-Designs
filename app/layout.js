@@ -1,4 +1,5 @@
-import { Fraunces, Inter } from "next/font/google";
+import { Fraunces, Geist } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import WhatsAppFloat from "./components/WhatsAppFloat";
@@ -9,7 +10,7 @@ const fraunces = Fraunces({
   weight: ["400", "600", "700"],
 });
 
-const inter = Inter({
+const geist = Geist({
   variable: "--font-body",
   subsets: ["latin"],
   weight: ["400", "500", "600"],
@@ -55,9 +56,15 @@ export const metadata = {
     images: ["/og-image.jpg"],
   },
   icons: {
-    icon: "/favicon.ico",
-    // apple: "/apple-touch-icon.png", // uncomment once this exists in /public
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
+  manifest: "/site.webmanifest",
 };
 
 export const viewport = {
@@ -68,8 +75,55 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-scroll-behavior="smooth" className={`${fraunces.variable} ${inter.variable} h-full antialiased`}>
+    <html lang="en" data-scroll-behavior="smooth" className={`${fraunces.variable} ${geist.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-V15E8R1JY4"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-V15E8R1JY4');
+          `}
+        </Script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  name: "Zuri Creative Designs",
+                  url: "https://zuricreativedesigns.com",
+                  logo: "https://zuricreativedesigns.com/favicon.ico",
+                  image: "https://zuricreativedesigns.com/og-image.jpg",
+                  description:
+                    "Custom web design, app development, branding, and SEO services for businesses in Kenya and worldwide.",
+                },
+                {
+                  "@type": "LocalBusiness",
+                  name: "Zuri Creative Designs",
+                  description:
+                    "A Kenyan web and software design business delivering websites, apps, branding and SEO services.",
+                  url: "https://zuricreativedesigns.com",
+                  telephone: "+254797538155",
+                  email: "hello@zuricreativedesigns.com",
+                  address: {
+                    "@type": "PostalAddress",
+                    addressLocality: "Nyahururu",
+                    addressRegion: "Laikipia",
+                    addressCountry: "KE",
+                  },
+                  image: "https://zuricreativedesigns.com/og-image.jpg",
+                },
+              ],
+            }),
+          }}
+        />
         <Navbar />
         {children}
         <WhatsAppFloat />

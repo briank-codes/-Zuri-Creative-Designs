@@ -6,6 +6,15 @@ import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import zuriPhoto from '../public/zuri.jpeg';
 import designsPhoto from '../public/designs.jpeg';
+import primehubImg from '../public/portfolio/primehub.jpeg';
+import manyattaImg from '../public/portfolio/manyatta-grill.jpeg';
+import wildfireImg from '../public/portfolio/wildfire.jpeg';
+import webDevImg from '../public/services/web-development.jpg';
+import appDevImg from '../public/services/application-development.jpg';
+import uiuxImg from '../public/services/ui-ux-design.jpg';
+import brandingImg from '../public/services/branding.jpg';
+import ecommerceImg from '../public/services/e-commerce.jpg';
+import seoImg from '../public/services/seo.jpg';
 
 export const metadata = {
   title: "Zuri Creative Designs | Web & Software Development in Kenya",
@@ -28,19 +37,19 @@ export default function Home() {
     <main>
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="container" style={{ paddingTop: '5rem', paddingBottom: '4rem' }}>
+      <section className="container home-hero" style={{ paddingTop: '5rem', paddingBottom: '4rem' }}>
         <div className="hero-grid">
           <div>
             <p className="hero-eyebrow">We design. We build. We grow brands.</p>
 
             <h1 style={{ fontSize: 'clamp(2.4rem, 5vw, 3.4rem)' }}>
-              Ideas that inspire.<br />Designs that deliver.
+              Fast websites & apps.<br />No bloat, no templates, no excuses.
             </h1>
 
             <div className="section-divider" />
 
             <p className="hero-subtext">
-              We build powerful websites and apps that help brands grow, engage and scale.
+              Built with whatever gets the job done right clean code, quick load times, designed to convert visitors, not just look nice.
             </p>
 
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
@@ -76,21 +85,22 @@ export default function Home() {
 
           <div className="services-grid" style={{ marginTop: '3rem' }}>
             {[
-              { icon: Code2, title: 'Web Development', desc: 'Fast, responsive and modern websites that drive results.' },
-              { icon: Smartphone, title: 'App Development', desc: 'Custom mobile apps for iOS & Android that scale.' },
-              { icon: PenTool, title: 'UI/UX Design', desc: 'Beautiful and intuitive designs that create amazing experiences.' },
-              { icon: Tag, title: 'Branding', desc: 'Strong brand identity that connects and leaves a lasting mark.' },
-              { icon: ShoppingCart, title: 'E-commerce', desc: 'Online stores that convert visitors into loyal customers.' },
-              { icon: TrendingUp, title: 'SEO & Marketing', desc: 'Smart strategies to increase visibility and drive real growth.' },
-            ].map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="service-card">
-                <div className="service-icon">
-                  <Icon size={22} />
-                </div>
-                <h3>{title}</h3>
-                <p>{desc}</p>
-                <div style={{ marginTop: '1rem', fontWeight: 700 }}>→</div>
-              </div>
+              { image: webDevImg, title: 'Web Development', desc: 'Fast, responsive and modern websites that drive results.' },
+              { image: appDevImg, title: 'App Development', desc: 'Custom mobile apps for iOS & Android that scale.' },
+              { image: uiuxImg, title: 'UI/UX Design', desc: 'Beautiful and intuitive designs that create amazing experiences.' },
+              { image: brandingImg, title: 'Branding', desc: 'Strong brand identity that connects and leaves a lasting mark.' },
+              { image: ecommerceImg, title: 'E-commerce', desc: 'Online stores that convert visitors into loyal customers.' },
+              { image: seoImg, title: 'SEO & Marketing', desc: 'Smart strategies to increase visibility and drive real growth.' },
+            ].map(({ image, title, desc }, i) => (
+              <ScrollReveal key={title} className="service-card-reveal" style={{ transitionDelay: `${(i % 3) * 90}ms` }}>
+                <Link href="/services" className="service-tile service-card-bg-link" style={{ backgroundImage: `url(${image.src})` }}>
+                  <div className="service-card-overlay" />
+                  <div className="service-card-body service-card-body-overlay">
+                    <h3>{title}</h3>
+                    <p>{desc}</p>
+                  </div>
+                </Link>
+              </ScrollReveal>
             ))}
           </div>
         </section>
@@ -135,6 +145,61 @@ export default function Home() {
                 style={{ width: '100%', height: 'auto' }}
               />
             </div>
+          </div>
+        </section>
+      </ScrollReveal>
+
+      {/* ── FEATURED WORK ────────────────────────────────────────────────── */}
+      <ScrollReveal>
+        <section className="container portfolio-section">
+          <div className="services-header" style={{ textAlign: 'center', maxWidth: '100%' }}>
+            <p className="hero-eyebrow" style={{ marginBottom: '0.4rem' }}>Recent work</p>
+            <h2 style={{ fontSize: 'clamp(1.7rem, 5vw, 2.2rem)' }}>Projects We&apos;ve Delivered</h2>
+            <div className="section-divider" style={{ margin: '0.8rem auto 0' }} />
+          </div>
+
+          <div className="portfolio-grid" style={{ marginTop: '3rem' }}>
+            <div className="portfolio-card">
+              <Image src={primehubImg} alt="PrimeHub Properties" className="portfolio-image" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+              <div className="portfolio-content">
+                <span className="portfolio-tag">Real Estate</span>
+                <h2>PrimeHub Properties</h2>
+                <p>A real estate marketplace with stunning property visuals and a mortgage calculator.</p>
+                <a href="https://prime-hub-properties.vercel.app/" target="_blank" rel="noopener noreferrer" className="portfolio-link">
+                  View Project →
+                </a>
+              </div>
+            </div>
+
+            <div className="portfolio-card">
+              <Image src={manyattaImg} alt="Manyatta Grill" className="portfolio-image" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+              <div className="portfolio-content">
+                <span className="portfolio-tag">Restaurant</span>
+                <h2>Manyatta Grill</h2>
+                <p>A nyama choma restaurant site with authentication, a role-based dashboard, and an animated menu.</p>
+                <a href="https://manyatta-grill.vercel.app/" target="_blank" rel="noopener noreferrer" className="portfolio-link">
+                  View Project →
+                </a>
+              </div>
+            </div>
+
+            <div className="portfolio-card">
+              <Image src={wildfireImg} alt="Wildfire Adventures" className="portfolio-image" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+              <div className="portfolio-content">
+                <span className="portfolio-tag">Tourism</span>
+                <h2>Wildfire Adventures</h2>
+                <p>A safari and beach tourism site with multi-currency and multilingual support.</p>
+                <a href="https://wildfire-adventures.vercel.app/" target="_blank" rel="noopener noreferrer" className="portfolio-link">
+                  View Project →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
+            <Link href="/work" className="btn-outline">
+              View All Work <span>→</span>
+            </Link>
           </div>
         </section>
       </ScrollReveal>
