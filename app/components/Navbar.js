@@ -60,13 +60,20 @@ export default function Navbar() {
           Services
         </Link>
         <Link
+          href="/pricing"
+          onClick={() => setMenuOpen(false)}
+          className={`nav-link${pathname === "/pricing" ? " active" : ""}`}
+        >
+          Pricing
+        </Link>
+        <Link
           href="/about"
           onClick={() => setMenuOpen(false)}
           className={`nav-link${pathname === "/about" ? " active" : ""}`}
         >
           About
         </Link>
-        <Link href="/#contact" onClick={goToContact} className="contact-us-btn">Get a Free Quote</Link>
+        <Link href="/#contact" onClick={goToContact} className="contact-us-btn">Start a Project</Link>
       </nav>
 
       <button

@@ -49,8 +49,8 @@ export default function Privacy() {
           <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginTop: '2rem', marginBottom: '0.75rem' }}>Your rights</h2>
           <p style={{ marginBottom: '1.5rem' }}>
             You can ask us to delete any information you&apos;ve submitted at any time by emailing{' '}
-            <a href="mailto:zuricreativedesigns@gmail.com" style={{ color: 'var(--color-accent)' }}>
-              zuricreativedesigns@gmail.com
+            <a href="mailto:hello@zuricreativedesigns.com" style={{ color: 'var(--color-accent)' }}>
+              hello@zuricreativedesigns.com
             </a>.
           </p>
 
@@ -63,8 +63,8 @@ export default function Privacy() {
           <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginTop: '2rem', marginBottom: '0.75rem' }}>Contact us</h2>
           <p>
             Questions about this policy? Reach us at{' '}
-            <a href="mailto:zuricreativedesigns@gmail.com" style={{ color: 'var(--color-accent)' }}>
-              zuricreativedesigns@gmail.com
+            <a href="mailto:hello@zuricreativedesigns.com" style={{ color: 'var(--color-accent)' }}>
+              hello@zuricreativedesigns.com
             </a>{' '}
             or via{' '}
             <a href="https://wa.me/254797538155" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent)' }}>

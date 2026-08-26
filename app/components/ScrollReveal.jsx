@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 
-export default function ScrollReveal({ children, className = '' }) {
+export default function ScrollReveal({ children, className = '', style }) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
 
@@ -34,7 +34,7 @@ export default function ScrollReveal({ children, className = '' }) {
   }, []);
 
   return (
-    <div ref={ref} className={`scroll-reveal ${visible ? 'is-visible' : ''} ${className}`}>
+    <div ref={ref} className={`scroll-reveal ${visible ? 'is-visible' : ''} ${className}`} style={style}>
       {children}
     </div>
   );

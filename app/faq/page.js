@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import FaqAccordion from "./FaqAccordion";
 import { FAQ_ITEMS } from "./faqData";
+import ScrollReveal from "../components/ScrollReveal";
 
 export const metadata = {
   title: "Frequently Asked Questions",
@@ -40,24 +41,30 @@ export default function FAQ() {
       />
 
       {/* FAQ HERO */}
-      <section className="container about-hero">
-        <p className="about-eyebrow">Got Questions?</p>
-        <h1 className="about-heading">
-          Frequently asked questions
-        </h1>
-      </section>
+      <ScrollReveal>
+        <section className="container about-hero">
+          <p className="about-eyebrow">Got Questions?</p>
+          <h1 className="about-heading">
+            Frequently asked questions
+          </h1>
+        </section>
+      </ScrollReveal>
 
       {/* FAQ LIST */}
-      <section className="container faq-section">
-        <FaqAccordion />
-      </section>
+      <ScrollReveal>
+        <section className="container faq-section">
+          <FaqAccordion />
+        </section>
+      </ScrollReveal>
 
       {/* CTA */}
-      <section className="container services-cta">
-        <h2>Still have questions?</h2>
-        <p>Reach out and we&apos;ll get back to you directly.</p>
-        <Link href="/#contact" className="cta-button">Get in touch</Link>
-      </section>
+      <ScrollReveal>
+        <section className="container services-cta">
+          <h2>Still have questions?</h2>
+          <p>Reach out and we&apos;ll get back to you directly.</p>
+          <Link href="/#contact" className="cta-button">Get in touch</Link>
+        </section>
+      </ScrollReveal>
     </main>
   );
 }

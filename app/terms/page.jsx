@@ -75,8 +75,8 @@ export default function Terms() {
           <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginTop: '2rem', marginBottom: '0.75rem' }}>Contact</h2>
           <p>
             Questions about these terms? Reach us at{' '}
-            <a href="mailto:zuricreativedesigns@gmail.com" style={{ color: 'var(--color-accent)' }}>
-              zuricreativedesigns@gmail.com
+            <a href="mailto:hello@zuricreativedesigns.com" style={{ color: 'var(--color-accent)' }}>
+              hello@zuricreativedesigns.com
             </a>{' '}
             or via{' '}
             <a href="https://wa.me/254797538155" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent)' }}>

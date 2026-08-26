@@ -13,8 +13,8 @@ export default function Footer() {
         </div>
 
         <div className="footer-minimal-meta">
-          <a href="mailto:zuricreativedesigns@gmail.com" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <Mail size={16} /> zuricreativedesigns@gmail.com
+          <a href="mailto:hello@zuricreativedesigns.com" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <Mail size={16} /> hello@zuricreativedesigns.com
           </a>
           <a href="https://zuricreativedesigns.com" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             <Globe size={16} /> zuricreativedesigns.com

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Code2, Smartphone, ShieldCheck, LifeBuoy } from 'lucide-react';
 import ScrollReveal from '../components/ScrollReveal';
 import FounderModal from '../components/FounderModal';
 import Footer from '../components/Footer';
@@ -27,7 +28,7 @@ export default function About() {
         <div className="about2-grid">
 
           <div className="about2-photo-col">
-            <div className="about2-photo-block">
+            <div className="about2-photo-block frame-marks">
               <Image
                 src={brianPhoto}
                 alt="Brian Korir, Founder of Zuri Creative Designs"
@@ -36,6 +37,10 @@ export default function About() {
                 sizes="(max-width: 768px) 100vw, 340px"
                 priority
               />
+              <span className="frame-corner frame-corner-tl" />
+              <span className="frame-corner frame-corner-tr" />
+              <span className="frame-corner frame-corner-bl" />
+              <span className="frame-corner frame-corner-br" />
             </div>
             <span className="about2-location-chip">📍 Nyahururu, Kenya</span>
           </div>
@@ -43,6 +48,10 @@ export default function About() {
           <div className="about2-content-col">
             <span className="about2-eyebrow">About Zuri Creative Designs</span>
             <h1 className="about2-heading">We Create Websites That Help Businesses Grow</h1>
+            <p className="mono-meta" style={{ marginTop: '0.2rem' }}>
+              <span className="mono-meta-dot" />
+              SELF-TAUGHT DEVELOPER — SHIPPING SINCE 2026
+            </p>
 
             <p className="about2-text">
               At Zuri Creative Designs, we build modern websites and web applications that are
@@ -58,16 +67,53 @@ export default function About() {
               supports long-term growth.
             </p>
 
-            <h2 className="about2-subheading">Why Choose Us?</h2>
-            <ul className="about2-list">
-              <li>Custom Website Development</li>
-              <li>Responsive Design for All Devices</li>
-              <li>Modern UI/UX Design</li>
-              <li>Fast &amp; Secure Websites</li>
-              <li>Ongoing Support &amp; Maintenance</li>
-            </ul>
+            <blockquote className="about2-quote-large">
+              &quot;Your vision. Our creativity. Digital excellence.&quot;
+            </blockquote>
 
-            <p className="about2-quote">&quot;Your vision. Our creativity. Digital excellence.&quot;</p>
+            <h2 className="about2-subheading">Why Choose Us?</h2>
+            <div className="about2-feature-grid">
+              <div className="about2-feature-item">
+                <div className="about2-feature-icon"><Code2 size={17} /></div>
+                <div>
+                  <h3>Custom-Coded</h3>
+                  <p>No page builders or templates — every site is built from scratch.</p>
+                </div>
+              </div>
+              <div className="about2-feature-item">
+                <div className="about2-feature-icon"><Smartphone size={17} /></div>
+                <div>
+                  <h3>Responsive by Default</h3>
+                  <p>Designed mobile-first, tested across real devices before launch.</p>
+                </div>
+              </div>
+              <div className="about2-feature-item">
+                <div className="about2-feature-icon"><ShieldCheck size={17} /></div>
+                <div>
+                  <h3>Fast &amp; Secure</h3>
+                  <p>Modern hosting, clean code, and security best practices baked in.</p>
+                </div>
+              </div>
+              <div className="about2-feature-item">
+                <div className="about2-feature-icon"><LifeBuoy size={17} /></div>
+                <div>
+                  <h3>Ongoing Support</h3>
+                  <p>I stay reachable after launch — on WhatsApp, not a ticket queue.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="about2-building">
+              <span className="about2-building-label">Currently building</span>
+              <div className="about2-building-list">
+                <span className="about2-building-chip">
+                  <span className="about2-building-status" /> Smart Shamba AI
+                </span>
+                <span className="about2-building-chip">
+                  <span className="about2-building-status" /> PesaYangu
+                </span>
+              </div>
+            </div>
 
             <FounderModal />
           </div>

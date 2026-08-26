@@ -3,18 +3,20 @@
 import { useState } from "react";
 import { FAQ_ITEMS } from "./faqData";
 
-function FaqItem({ item, isOpen, onToggle }) {
+function FaqItem({ item, index, isOpen, onToggle }) {
+  const panelId = `faq-answer-${index}`;
   return (
     <div className="faq-item">
       <button
         className="faq-question"
         onClick={onToggle}
         aria-expanded={isOpen}
+        aria-controls={panelId}
       >
         <span>{item.question}</span>
         <span className={`faq-icon ${isOpen ? "faq-icon-open" : ""}`}>+</span>
       </button>
-      <div className={`faq-answer-wrap ${isOpen ? "faq-answer-wrap-open" : ""}`}>
+      <div id={panelId} className={`faq-answer-wrap ${isOpen ? "faq-answer-wrap-open" : ""}`}>
         <p className="faq-answer">{item.answer}</p>
       </div>
     </div>
@@ -34,6 +36,7 @@ export default function FaqAccordion() {
         <FaqItem
           key={item.question}
           item={item}
+          index={index}
           isOpen={openIndex === index}
           onToggle={() => toggle(index)}
         />

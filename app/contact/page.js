@@ -1,4 +1,5 @@
 import ContactForm from "../components/ContactForm";
+import ScrollReveal from "../components/ScrollReveal";
 
 export const metadata = {
   title: "Contact Us",
@@ -19,14 +20,18 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <main className="contact-page">
-      <div className="contact-page-header">
-        <h1>Let&apos;s Build Something Together</h1>
-        <p>
-          Tell us about your project and we&apos;ll get back to you shortly.
-        </p>
-      </div>
+      <ScrollReveal>
+        <div className="contact-page-header">
+          <h1>Let&apos;s Build Something Together</h1>
+          <p>
+            Tell us about your project and we&apos;ll get back to you shortly.
+          </p>
+        </div>
+      </ScrollReveal>
 
-      <ContactForm />
+      <ScrollReveal>
+        <ContactForm />
+      </ScrollReveal>
     </main>
   );
 }
