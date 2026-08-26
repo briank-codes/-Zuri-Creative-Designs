@@ -3,30 +3,22 @@ import { Mail, Globe, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="container footer-minimal">
-      <div className="footer-minimal-top">
+    <footer className="footer-minimal">
+      <div className="container">
         <div>
           <div className="footer-minimal-brand">Zuri Creative Designs</div>
           <p className="footer-minimal-tagline">
-            We build premium websites, web applications and digital experiences that help brands grow and succeed.
+           Elevate your business now
+
           </p>
         </div>
 
-        <div className="footer-minimal-meta">
+         <div className="footer-minimal-meta">
           <a href="mailto:hello@zuricreativedesigns.com" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             <Mail size={16} /> hello@zuricreativedesigns.com
           </a>
-          <a href="https://zuricreativedesigns.com" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <Globe size={16} /> zuricreativedesigns.com
-          </a>
-          <a href="https://www.google.com/maps/search/?api=1&query=Nyahururu%2C+Kenya" target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            <MapPin size={16} /> Nyahururu, Kenya
-          </a>
-          <a href="https://wa.me/254797538155" target="_blank" rel="noopener noreferrer">
-            +254 797 538 155
-          </a>
-        </div>
-
+         
+          
         <div className="footer-minimal-socials">
           <a href="https://www.linkedin.com/in/zuri-creative-designs-508714394?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -46,14 +38,13 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="footer-minimal-bottom">
-        <span>© {new Date().getFullYear()} Zuri Creative Designs. All rights reserved.</span>
-        <div className="footer-minimal-bottom-links">
-          <Link href="/faq">FAQ</Link>
-          <Link href="/terms">Terms of Service</Link>
-          <Link href="/privacy">Privacy Policy</Link>
-        </div>
+       <div className="footer-minimal-bottom">
+      <span>© {new Date().getFullYear()} Zuri Creative Designs. All rights reserved.</span>
+      <div className="footer-minimal-bottom-links">
+        <Link href="/faq">FAQ</Link>
+        <Link href="/terms">Terms of Service</Link>
+        <Link href="/privacy">Privacy Policy</Link>
       </div>
-    </footer>
-  );
-}
+    </div>
+  </div>
+</footer>
