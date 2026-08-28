@@ -4,8 +4,8 @@ import Link from 'next/link';
 import ScrollReveal from './components/ScrollReveal';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
-import zuriPhoto from '../public/zuri.jpeg';
-import designsPhoto from '../public/designs.jpeg';
+import zuriPhoto from '../public/zuri.png';
+import designsPhoto from '../public/designs.png';
 import primehubImg from '../public/portfolio/primehub.jpeg';
 import manyattaImg from '../public/portfolio/manyatta-grill.jpeg';
 import wildfireImg from '../public/portfolio/wildfire.jpeg';
@@ -19,19 +19,49 @@ import seoImg from '../public/services/seo.jpg';
 export const metadata = {
   title: "Zuri Creative Designs | Web & Software Development in Kenya",
   description:
-    "Zuri Creative Designs builds modern, high-performing websites and software for businesses in Kenya and worldwide. Full-stack development, mobile apps, branding, SEO, and WiFi billing systems.",
+    "We design high-converting websites, scalable mobile apps, custom software, and automated billing systems for businesses in Kenya and worldwide.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Zuri Creative Designs | Web & Software Development in Kenya",
+    title: "Zuri Creative Designs | High-Performance Websites & Software.",
     description:
-      "Modern websites and software that help businesses grow — for clients in Kenya and worldwide.",
+      "Transforming visitors into paying clients with custom websites, mobile apps, and branding tailored for growth.",
     url: "https://zuricreativedesigns.com",
     type: "website",
   },
 };
+function RevenueIcon(props) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 1024 1024" width={16} height={16} {...props}>
+      <path d="M200.5 39.1a228.2 228.2 0 0 0-150.4 83.3A249 249 0 0 0 9.5 199l-2.6 10c-1.9 7.1-2.5 10.5-5.1 26.5-1.5 8.9-1.5 47.7 0 57.5q2.6 17.6 6.1 30.2l2 7a233.5 233.5 0 0 0 90 121.8 233 233 0 0 0 86.1 34.9l12.6 2.1c7.9 1.4 46.5 1.4 55.2 0A224 224 0 0 0 386 424a210 210 0 0 0 40-53.3l2.3-4.1c8.5-7.6 22.4-19.7 25.6-22.4l15-13 8-7 8-7 8-7 8-7c.3-.3 7-6.2 15-13s14.7-12.7 15-13l8-7 10.8-9.5 4.6-3.7 22.7 9.9L744 305.8c48.7 24 44.5 23.8 63.9 3.5l21.5-22.3 35.6-37c13.5-14 29.6-30.9 36-37.4l14-14.6 34.4-35.7c12.6-13 23.3-23.7 23.8-23.7 1.1 0 1 5.7-.3 16.2-1.5 11.1-.3 15.4 5.5 20.4 3.5 3 4.6 3.4 9.6 3.4 4.3 0 6.5-.6 9-2.3 6.4-4.3 6.8-6.2 10-46.2.5-7.2 1.2-15 1.5-17.5s.8-8.8 1.1-14.1c.6-9.2.5-9.8-2.1-13.7a18 18 0 0 0-7.3-6.2c-4.4-2.1-5.2-2.2-13.7-1.1-10.2 1.3-19.6 2.5-33.5 4.1-33.2 3.8-35.7 4.3-39.3 7.7-1.6 1.6-3.5 4-4.3 5.5-3.3 6.3-.4 15.2 6.3 19.7 3.4 2.2 4.3 2.3 13.2 1.7 5.3-.3 12.2-.9 15.4-1.2q5.6-.6 5.7.4 0 1-.7 1.4c-.8.3-4.7 4.4-48.3 49.8l-51 53-14 14.6-63.7 66.1c-2.6 2.8-3.5 3.2-5.5 2.4-1.2-.5-22.8-11-47.8-23.4l-132.5-65.3c-10.4-5.1-12.7-5.9-17.6-5.9-5.6.1-8.5 1.6-16.1 8.8L558 210l-11 9.6-20.5 17.9-20 17.4L496 264l-8 7c-2 2.1-36.4 31.6-37.2 31.9q-1 .3-.5-4c1.9-14.6 2.8-32.1 2.2-44.4-1.1-23-4.4-41.1-11.3-62A227 227 0 0 0 251.3 39c-8.5-1.2-42.3-1.1-50.8.1m48.6 31.8 12.4 2.1a194.1 194.1 0 0 1 100.8 52.4 193 193 0 0 1 52.5 90.6c5 21.2 5.6 26.6 5.5 49a174 174 0 0 1-13.9 72.6 227 227 0 0 1-26.2 45.6A206 206 0 0 1 350 414l-6 5.1a199.9 199.9 0 0 1-91.2 37.8c-8.7 1.5-44.2 1.5-52.2.1-20-3.5-17.2-2.9-32.4-7.5a195 195 0 0 1-132.7-149A196 196 0 0 1 59.4 165 196 196 0 0 1 191 73.1l11.5-2c6.8-1.2 39.9-1.3 46.6-.2m-28.4 45.5c-7.4 2.7-9.8 7.3-10.6 20.5l-.6 9.4-3 .9c-9.6 2.8-10.1 2.9-17.5 6.2-12 5.2-25.4 18-31.2 29.8a54 54 0 0 0-6.9 20.9 63 63 0 0 0 12.3 45.4 83 83 0 0 0 35.8 23.4l7 2.1c3 1 9.3 2.4 17.5 4 17.1 3.4 24.7 5.6 34 10.1 21 10.1 27 35.9 11.4 49.3-22.4 19.1-64.5 17.6-84.5-3.1a58 58 0 0 1-10.4-19.7c0-.9-1.8-3.4-3.9-5.5-6.8-6.8-15.8-6.8-22.2-.1-6.5 6.8-6.3 13.3.9 29 9.1 20.1 29.8 35.6 55.9 42.1l5.1 1.2.4 9.1c.6 14.5 4.9 20.6 15.2 21.3a15 15 0 0 0 14.4-6.7c1.9-2.8 2.2-4.6 2.2-12.1 0-10 .5-11.9 3.1-11.9 4.7 0 19.4-4.7 28.8-9.3a53 53 0 0 0 18-12.6 56 56 0 0 0 17-47.9q-6.1-42.7-52.4-58c-8-2.6-12.8-3.7-31-7.3q-25.9-5-36.2-16.3a27 27 0 0 1-4.3-31.1c4.6-9.7 12.5-15.8 26.5-20.6a86 86 0 0 1 30 0 54 54 0 0 1 31.6 26.2c5.5 10.2 14.6 13.8 22.8 8.8 10.9-6.6 11-15.9.2-32.9a80 80 0 0 0-42.1-31.9c-2.5-.7-6.1-1.8-8-2.5l-3.5-1.2-.3-10c-.3-10-.3-10.2-3.8-14.2a17 17 0 0 0-7.2-5.2c-4.7-1.3-5.8-1.2-10.5.4m668.3 197a36 36 0 0 0-24 20l-3 6.4.2 310.4.3 310.3 2.8 5.6c3 6.1 9.2 12.7 14.7 15.6 8.1 4.4 9 4.4 64.5 4.1l53-.3 5.7-2.8c9.3-4.6 14.9-11.1 19.7-23 1.3-3.4 1.6-617.7.3-620.5l-3.3-6.7a37 37 0 0 0-25.1-19.4c-6.9-1.6-99.8-1.3-105.8.3m101.2 32.3c1.7 1.6 1.8 12.3 1.8 303.8 0 254.1-.2 302.4-1.4 303.4-.9.8-14.6 1-48.7.9l-47.4-.3-.3-303.5c-.2-284.5-.1-303.6 1.5-304.8 1.3-.9 12.4-1.2 47.2-1.2 40.9 0 45.6.2 47.3 1.7M402 485.2c-8 3.4-11.6 5.7-15.5 10a35 35 0 0 0-9.4 21.2c-1.5 10.8-1.5 426.4 0 437.2.6 4.3 2 9.8 3.2 12.3a40 40 0 0 0 17.5 16.9l5.7 2.7h109l5.9-2.9c7.6-3.7 13.9-10 17.4-17.3l2.7-5.8v-450l-2.7-5.2a38 38 0 0 0-21.8-19 1268 1268 0 0 0-112-.1m104.4 32.4c.8 2 .8 432.8 0 434.8-.5 1.4-5.7 1.6-48.4 1.6h-47.8l-1.1-3.1c-1.6-4.5-1.6-427.3 0-431.8l1.1-3.1H458c42.7 0 47.9.2 48.4 1.6m139.1 56.3a38 38 0 0 0-23.3 20l-2.7 5.6v360l3 5.9a41 41 0 0 0 17.4 17.4l5.6 2.7 53 .3c55.5.3 56.4.3 64.5-4.1a40 40 0 0 0 17.9-24.9c.8-3.3 1.1-56.9 1.1-177.5-.1-183.9.1-178.4-4.8-187.9a45 45 0 0 0-16.9-15.5l-4.8-2.4-53.5-.2c-29.4-.1-54.8.2-56.5.6m103.3 32.9c1.6 2.1 1.8 342.2.2 345.3-1 1.8-2.6 1.9-48.5 1.9s-47.5-.1-48.5-1.9c-1.6-3.1-1.4-343.2.3-345.4 1.1-1.5 5.3-1.7 46.7-1.9 25-.2 46.2-.1 47 .1a7 7 0 0 1 2.8 1.9m-588.3 98.4a37 37 0 0 0-25.1 26c-2 7.6-2.1 219.7 0 227.3 3.5 13.2 10.5 20.6 24.9 26.4 4 1.6 106.5 1.6 110.4 0a38 38 0 0 0 20.2-15.3c5.8-8.8 5.6-3.2 5.6-125.6V731.5l-2.7-5.7a38 38 0 0 0-23.7-20.7c-4.5-1.4-105.3-1.4-109.6.1M264 737.9c.7 1.3 1 36.5 1 107.1s-.3 105.8-1 107.1c-1 1.8-2.6 1.9-48.3 1.9-35.5 0-47.6-.3-48.5-1.2-1.6-1.6-1.8-211.9-.2-214.9 1-1.8 2.6-1.9 48.5-1.9s47.5.1 48.5 1.9" />
+    </svg>
+  );
+}
 
+function PinIcon(props) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 1024 1024" width={16} height={16} {...props}>
+      <path d="M489 1c-2.5.5-7.5.9-11.2.9-3.7.1-8.9.5-11.5 1l-12.3 2a240 240 0 0 0-26 4.8L411.5 14c-12.6 3.3-14 3.7-25.5 8l-13 4.7a463 463 0 0 0-45 21.4l-6.6 4A386 386 0 0 0 245 111a402 402 0 0 0-60 78 408 408 0 0 0-24 49l-2 5.5-2.8 7.5-3.7 10a427 427 0 0 0-14.6 64 519 519 0 0 0-3.9 53.5c0 21.6 3.2 46.7 9 72a355 355 0 0 0 11.1 40l5 15.5c1.1 3.6 2.5 7.3 4 10.2a276.7 276.7 0 0 0 16 35.3c16.8 33.3 21.6 41.1 69.9 114l33 50 33 50 33 50 33 50c10.8 17 56.6 85.4 59.8 89.3a75 75 0 0 0 15.6 13.2c.4 0 2.5.8 4.9 1.9a40 40 0 0 0 35.4 0c2.4-1.1 4.5-1.9 4.9-1.9a75 75 0 0 0 15.6-13.2A6842 6842 0 0 0 646.7 860c181.2-274.5 168.5-255.2 177.2-269.8 13.3-22.3 36.1-67.4 36.1-71.3 0-.5.4-1.7.9-2.7a80 80 0 0 0 5.2-13.7 560.2 560.2 0 0 0 12.3-40.8 431 431 0 0 0 5.7-25.7 335 335 0 0 0 5.9-57.5 519 519 0 0 0-5.9-66.5 427 427 0 0 0-12.6-51l-3.7-10-2.8-7.5-2-5.5a408 408 0 0 0-31.2-60.9A377.8 377.8 0 0 0 696 48.1a463 463 0 0 0-45-21.4L638 22a186 186 0 0 0-25.5-8L596 9.7c-5.3-1.4-11.3-2.5-25.7-4.7l-9.8-1.6c-12-2.3-63.3-4-71.5-2.4m47 45a312 312 0 0 1 84.5 17l5.5 2 5.5 2 5.5 2.1a335.2 335.2 0 0 1 154.9 128l8.8 14.4c6.2 10.2 17 32.4 21.3 44l3 8 2.8 7.5c1.9 5.1 2.6 7.3 5.1 16.2 2.1 7.4 7.1 29.8 8 35.8l2 13.5c.6 3.8 1.5 15.1 2.1 25 1.4 21.8.1 40.6-4.1 63.5-1.9 9.8-6.3 29.3-7.9 34l-3 10a609 609 0 0 1-10.8 32.5 785 785 0 0 1-24.3 49.6l-4.9 8.4c-11.9 20.6-11.6 20.1-68.1 105.7L588 868c-66 100.1-72.5 109.8-74.2 110.9-3.6 2.2 2.9 11.5-77.8-110.9L302.1 665.2c-56.5-85.6-56.2-85.1-68.1-105.7l-4.9-8.4a785 785 0 0 1-24.3-49.6A609 609 0 0 1 194 469l-3-10a535 535 0 0 1-6-24.5 314 314 0 0 1-6.1-42c-1-13.1 0-41.3 2-55L183 324c1-6.8 5.8-28.6 8.1-36.8 2.5-8.9 3.2-11.1 5.1-16.2l2.8-7.5 3-8a363 363 0 0 1 20.1-42A334.6 334.6 0 0 1 387 69.1l5.5-2.1 5.5-2 5.5-2a347 347 0 0 1 63-15c3.3-.6 13.4-1.5 22.5-2s17.4-1.2 18.5-1.4 4.5-.2 7.5 0zm-46 133.5a196 196 0 0 0-99.5 40A204 204 0 0 0 313 356.1c-1.2 8.2-1.3 36.6-.1 44L315 413c.7 4.1 1.9 10 2.7 13l2.3 8.5c.4 1.6 1.7 5.7 2.9 9 1.3 3.3 2.7 7.3 3.1 8.9 3.1 9.8 16.5 33.2 27.1 47.3A206 206 0 0 0 465.5 573a288 288 0 0 0 21.8 4.1c6.3 1.2 43.1 1.2 49.4 0 2.6-.6 8-1.5 11.8-2.1a215 215 0 0 0 17.5-4 126 126 0 0 0 20.5-7.1c9.1-3.5 27.1-12.9 35.6-18.6a203 203 0 0 0 80.1-104.8c2.6-8 5.5-19.6 6.8-27.5l2.1-12.9c1.2-7.4 1.1-35.8-.1-44-4.4-28.8-9-44.4-19.7-66.1A200 200 0 0 0 490 179.5m37 44a160.3 160.3 0 0 1 80.5 31.9c5.2 3.9 23.1 21.9 27.1 27.1a195 195 0 0 1 21.6 37l2.8 8a155 155 0 0 1-37.6 161 154.3 154.3 0 0 1-218.8 0 154.7 154.7 0 0 1-37.6-161l2.8-8c1.9-6.4 13.7-26.5 21.6-37 4-5.2 21.9-23.2 27.1-27.1a158 158 0 0 1 98-32.8z" />
+    </svg>
+  );
+}
+
+function CalendarCheckIcon(props) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 1024 1024" width={16} height={16} {...props}>
+      <path d="M267.4 139.5a52 52 0 0 0-32.9 25.9 60 60 0 0 0-6.5 30.3V207l-2.7.5a93 93 0 0 0-30.6 10 101 101 0 0 0-51.2 59c-5.8 17.3-5.5 2.6-5.5 270.3 0 165.1.3 247.9 1 251l2.1 9.7a109 109 0 0 0 19.1 39.2 107 107 0 0 0 52.8 35.4c15.6 4 7 3.9 299.2 3.9 183.7 0 281.5-.3 285-1a103.4 103.4 0 0 0 87.3-85.5c2.2-11.8 2.2-494.8 0-507.1q-5.8-33-28.9-55.9c-16.2-16.2-31.6-24-56.8-29l-2.8-.5v-11.3c-.1-19.5-4.5-31.5-15.8-42.6a50 50 0 0 0-47.4-13.7 51 51 0 0 0-30.7 21.5c-6.3 9.3-8.1 15.7-8.8 31.3l-.6 13.8h-51.4l-.6-13.3a80 80 0 0 0-2.5-18.9 51 51 0 0 0-83.9-21.5c-11.1 10.4-16.2 23.9-16.3 42.9V206h-52v-10.8a60 60 0 0 0-6.5-29.8 51 51 0 0 0-45-27.4 52 52 0 0 0-48.7 35.8 80 80 0 0 0-2.5 18.9l-.6 13.3h-51.4l-.6-13.6c-.7-15.5-2.6-22.4-8.8-31.5a51 51 0 0 0-54.5-21.4m21.1 28.6c5.3 2.5 10 7.1 12.3 11.9 1.5 3.1 1.7 8 1.7 40.5v37l-2.7 4.7a22 22 0 0 1-20.4 11.8c-6 0-12.8-2.7-16.2-6.3a39 39 0 0 1-4.4-6.7c-2.3-4.4-2.3-5.1-2.6-39-.3-36.5-.1-39.1 4.4-45.8 6-9.1 18.3-12.6 27.9-8.1m155 0a28 28 0 0 1 13.3 15c1 3.3 1.2 13 1 38.9-.3 34-.3 34.6-2.6 39-3.2 6-5.6 8.5-10.8 10.9a26 26 0 0 1-18.5.7 27 27 0 0 1-12.1-11.1c-2.3-4-2.3-4.1-2.3-41 0-40.8 0-40.6 6.4-47.1a22 22 0 0 1 25.6-5.3m155 0c5.3 2.5 10 7.1 12.3 11.9 1.5 3.1 1.7 8 1.7 40.5 0 37 0 37-2.3 41a23 23 0 0 1-20.6 12.5c-9.1 0-16.5-4.5-20.6-12.7-2.5-4.8-2.5-4.9-2.8-39.3-.3-36.5-.1-39.1 4.4-45.8 6-9.1 18.3-12.6 27.9-8.1m155 0a28 28 0 0 1 13.3 15c1 3.3 1.2 13 1 38.9-.3 34-.3 34.6-2.6 39a39 39 0 0 1-4.4 6.7 24 24 0 0 1-16.2 6.3 22 22 0 0 1-20.4-11.8l-2.7-4.7v-75l2.4-4c6.4-10.9 19.1-15.3 29.6-10.4m-370.2 79.6c.8 15.2 2.6 22.1 8.2 30.8A51 51 0 0 0 462 294c2.7-1.7 7.3-5.7 10.2-8.9 9.8-10.5 13.7-22.1 13.8-40.4V234h52v10.7c.1 18.3 4 29.9 13.8 40.4a50.9 50.9 0 0 0 88.9-37.4l.6-13.7h51.4l.6 13.7a55 55 0 0 0 6.3 28 56 56 0 0 0 33 25.2 68 68 0 0 0 23.8 0 56 56 0 0 0 36.1-32.4 71 71 0 0 0 3.5-22.8c0-9.3.1-9.7 2.2-9.7 2.5 0 7.5 1.5 13.5 4.2l4.8 1.8c1.5 0 12.9 8.2 17.8 12.9a72 72 0 0 1 22.7 42.6c.7 4.3 1 15.8.8 30l-.3 23h-691l-.3-24c-.2-15.3.1-26.2.9-30a73 73 0 0 1 22.6-41.6 86 86 0 0 1 17.8-12.9c.3 0 2.4-.8 4.8-1.8 6-2.7 11-4.2 13.5-4.2 2.1 0 2.2.4 2.2 9.4 0 18.8 4.1 29.7 15.5 41.2a47 47 0 0 0 36 15.4c16.5 0 30.8-7.1 41.1-20.5 6.9-9 9.3-17.2 10.1-33.8l.6-13.7h51.4zm474.5 336.8c.2 152.7 0 206.5-.9 211-6.2 32-28 54.3-59.9 61.1-5.5 1.2-50.8 1.4-285 1.4-295.6 0-282.9.2-296.3-4.4a78 78 0 0 1-45.9-46.9c-3.9-12.7-3.8-7.8-3.8-221.3 0-112.8.3-205.4.7-205.7.3-.4 155.9-.6 345.7-.5l345.1.3zM269.5 449.9a39 39 0 0 0-22.7 14.9c-6.6 9.6-6.8 11-6.8 49.3 0 22.1.4 35.8 1.1 38a37 37 0 0 0 24.8 25.8c6 2 8.6 2.1 39 2.1 33.6 0 37.1-.3 45-4.3a38 38 0 0 0 19-22c.7-1.9 1.1-14.5 1.1-39.2s-.4-37.3-1.1-39.2a39 39 0 0 0-20.7-23.1l-5.7-2.7-34.5-.1c-19-.1-36.3.1-38.5.5m69.9 30 2.6 2.4v32.1c-.1 23.7-.4 32.5-1.3 33.7-2.8 3.7-5 3.9-36 3.9h-30.5l-3.1-2.9-3.1-2.9v-31.4c0-33.8.1-34.7 5.4-36.8 1.1-.5 15.9-.8 32.8-.7l30.6.2zm137-30a38 38 0 0 0-29.3 31.2c-1.4 8.6-1.5 58.1 0 66.8a38 38 0 0 0 28.5 31c2.6.7 15.9 1.1 36.6 1.1 30.2 0 32.9-.1 38.8-2.1a36 36 0 0 0 26-30.9 527 527 0 0 0-.1-65.3 37 37 0 0 0-20.7-28.9l-6.7-3.3-34.5-.2c-19-.1-36.3.2-38.6.6m67.6 28.4c1.4.7 3.3 2.8 4.2 4.7 1.6 3.1 1.8 6.8 1.8 31.3 0 29.8-.4 32.8-5.1 36.1-2 1.4-6.3 1.6-32.9 1.6s-30.9-.2-32.9-1.6c-4.7-3.3-5.1-6.3-5.1-36.1 0-24.5.2-28.2 1.8-31.3 2.9-5.8 3.7-6 36.2-6 21.6 0 30.2.4 32 1.3m225.1-12.8a809 809 0 0 0-34 32.9 828 828 0 0 1-32.5 31.6c-.6 0-8.2-7.1-17-15.9-13-12.8-16.8-15.9-19.7-16.5-10.8-2-18.5 6-16.4 17.1.6 3.3 3.9 7.1 23.3 26.4 19.7 19.7 23.2 22.7 26.4 23.2 8.2 1.2 8.4 1 49.8-40.3 37.4-37.4 38.9-39 39.5-43.4 1.7-11.2-10-20.3-19.4-15.1M265.4 643.9a39 39 0 0 0-23.5 23.3c-1.7 4.8-1.9 8.2-1.9 39.9 0 22.1.4 35.8 1.1 38a38 38 0 0 0 20.7 24.1l6.7 3.3h36c37.9 0 37.9 0 47-4.8 5.5-2.9 9-6.2 12.8-12.1 5.8-8.8 5.8-9.6 5.5-50.1l-.3-37-2.9-5.8a39 39 0 0 0-20.8-18.5c-6.3-2.1-7.8-2.2-40.9-2.1-30 0-35.1.3-39.5 1.8m74 28.7 2.6 2.7v64.4l-2.6 2.4-2.6 2.4h-64l-2.4-3-2.4-3v-63.3l3.1-2.6 3.1-2.6h62.5zm134-29.1a33 33 0 0 0-15.9 9.9c-10.1 10.3-11.5 17-11.5 53.7 0 34.5 1.3 41.8 8.8 51.7a47 47 0 0 0 18.2 12.3c6.6 2.1 71.5 2.1 78-.1 14-4.5 23.6-16 26-31 1.4-8.8 1.3-57.6-.1-65.9a37 37 0 0 0-25.6-30.2c-5.1-1.7-8.9-1.9-39.7-1.8-24.8.1-35.2.4-38.2 1.4m72.4 28.7c3.9 4.2 4.2 7 4.2 35.4 0 20.7-.3 28.3-1.3 30.7-2.7 6.3-1.9 6.2-36.7 6.2s-34 .1-36.7-6.2c-1-2.4-1.3-10-1.3-30.7 0-28.4.3-31.2 4.2-35.4 2.1-2.2 2.3-2.2 33.8-2.2s31.7 0 33.8 2.2m132-27.9a37 37 0 0 0-21.9 21.7c-1.7 4.6-1.9 7.9-1.9 41.3 0 26.7.4 37.1 1.3 39.7a38 38 0 0 0 24.7 24.2c2.7 1 11.7 1.3 39.5 1.3h36l6.7-3.3q15.5-7.5 20.7-24.1a320 320 0 0 0 1.1-38c0-31.3-.2-35.1-1.9-39.7a38 38 0 0 0-26-24.3c-2.2-.7-15.3-1.1-38-1-32.9.1-34.9.2-40.3 2.2m75.1 28.3 3.1 2.6v63.3l-2.4 3-2.4 3h-64l-2.6-2.4-2.6-2.4v-64.4l2.6-2.7 2.7-2.6h62.5z" />
+    </svg>
+  );
+}
+
+function IncorporationIcon(props) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 1024 1024" width={16} height={16} {...props}>
+      <path d="M491 9.1a206 206 0 0 0-56 14.6 199 199 0 0 0-88 73.8 221 221 0 0 0-19 36.3 136.2 136.2 0 0 0-7.8 25.2 196 196 0 0 0 28.7 157.3 183 183 0 0 0 35.6 39.5c5 4.1 9.1 8 9.3 8.6.1.7-2.4 1.7-6 2.5-6 1.3-21.6 5.2-28.5 7.2l-6.5 1.8a453 453 0 0 0-65 25.6 283 283 0 0 0-90.7 69 220 220 0 0 0-38.2 68l-2 6.5c-.9 2.9-4.2 17.5-6 27-1.4 7.2-2.6 175.9-1.4 186 .6 4.5 1.3 6 4.2 8.7l3.4 3.3 47.2.2 47.2.3.5 14c.5 15.2 1.9 20 7.5 25.8 6.7 7 14.3 9.7 27.2 9.7 10.2 0 9.1-.8 12.6 10 2.5 7.7 6.9 18.2 10.9 25.9 2.1 4.1 3.8 8.1 3.8 9s-3.1 4.8-7 8.6c-9 8.9-11.4 14.4-10.8 24.7.2 4.3 1.2 9 2.3 11.3 2.5 5.5 52.4 55.7 57.9 58.3 7.4 3.5 9.6 4.2 13.8 4.2 8.8 0 16.4-3.8 24.8-12.5 6.9-7.1 6.7-7.1 16.7-2.2 9 4.4 20.5 9.1 30.3 12.4l5.5 1.9.5 11.4c.6 13.2 2.3 18 8.6 24.3 3.6 3.5 5.1 4.5 12.7 7.6 4.2 1.7 76 1.5 80.7-.2 8.4-3 13.8-7.6 18.1-15.2 1.7-3.2 2.3-6 2.6-14 .6-14.3.5-14 6.5-15.9 8.4-2.7 20.6-7.6 30.1-12.3 4.8-2.4 9-4.3 9.3-4.3s3.8 3.1 7.8 6.8c13.7 13.3 22.3 15.2 37.6 8.5 5-2.2 55.1-52.5 58.1-58.3 1.9-3.6 2.3-6.2 2.4-13 0-10.8-1.5-14.1-11.2-24.1l-7.3-7.6 3-5.9c3.4-6.8 8.1-17.4 9.9-22.4l2.1-5.5 2.2-6.5 1.5-4.5 10.9-.7c13.6-.8 15-1.1 21-5.7 10.1-7.5 13.4-16.1 13.4-34.3V770h98.9l3.4-3.3c2.9-2.7 3.6-4.2 4.2-8.7.4-3 .5-44.4.2-92-.4-87.8-.6-91.6-4.2-107l-1.7-7a261.7 261.7 0 0 0-3.9-14c-.7-2.5-1.6-4.9-2.1-5.5q-.7-1-.8-2.2c0-2-8.8-21-13.6-29.1a378 378 0 0 0-15.3-23.2l-6.4-7.7a304 304 0 0 0-35.9-34.7 336 336 0 0 0-85.2-47.6 461 461 0 0 0-68.4-21.1c-1.3-.5-3.4-.9-4.8-.9-4.1 0-2.6-2.1 7.1-10.2a195.2 195.2 0 0 0 68.9-166.2l-1.7-17.1-1.7-8A197 197 0 0 0 676 96c-7-10.5-7.2-10.6-16.1-20.9A183 183 0 0 0 621 41.3c-11-7.4-22.4-13.7-30-16.7l-7.5-3.1a185.4 185.4 0 0 0-37-10.3A202 202 0 0 0 491 9.1M530.9 33c25.5 3.9 37.7 7.4 55.6 16a176 176 0 0 1 96.4 127.5 176 176 0 0 1-4.9 79 196 196 0 0 1-24.8 50.4 258 258 0 0 1-30.7 33.2 175 175 0 0 1-73.5 35.8 143 143 0 0 1-37 3.5c-19.6 0-29.1-1.2-45.5-5.6a175 175 0 0 1-107.3-85.5 171.5 171.5 0 0 1-7.6-147.8A176 176 0 0 1 492 33.1c7.8-1.2 31.1-1.3 38.9-.1m-97.4 353.5c6.1 2.8 23.3 8.6 31 10.4 18.9 4.6 26.8 5.5 47.5 5.5 20.9 0 27.3-.8 48-5.6a325 325 0 0 0 24.5-7.7l6.7-3c5.3-2.4 7.1-2.5 13.1-1.2 2.3.5 7.1 1.5 10.7 2.1a259 259 0 0 1 18.5 4 469 469 0 0 1 43 12.1l6.5 2.3c15.8 5.1 48 19.9 62.7 28.8a253 253 0 0 1 50.4 38.7 177 177 0 0 1 50.8 90.1c3.4 15.7 3.6 20 3.6 101.5v81l-41.2.3-41.3.2v-9.3c0-15.8-2.4-24.2-8.8-31-6.3-6.7-12-8.8-26.1-9.6l-10.4-.6-1.5-4.5-2.2-6.5-2.1-5.5c-2-5.5-6.7-16-9.9-22.2l-3-5.7 6.9-7.1c9.6-10 11.6-14.2 11.6-25 0-8-.2-8.9-3.5-14.3-4.3-7.2-51.9-54.7-57-57-15.5-6.8-25.2-4.4-39 9.7-3 3.1-5.8 5.6-6.2 5.6s-5.9-2.4-12.1-5.4a166 166 0 0 0-26.5-10.7c-3-.7-5.7-2-6.2-2.9s-1-6.5-1.2-12.5c-.4-9-.9-11.7-2.7-15a33 33 0 0 0-18.7-15.3 625 625 0 0 0-79.8 0c-8.4 2.4-15.1 8-18.9 15.8a38 38 0 0 0-2.7 15.9c-.5 12.4-.3 11.9-7.5 14a530 530 0 0 0-14 5.2c-3.3 1.3-10 4.2-14.8 6.6a104 104 0 0 1-9.3 4.3c-.3 0-3.8-3.1-7.7-6.9-8.1-7.5-9.7-8.6-16.5-10.7-7.5-2.2-11.8-1.8-21.2 2.3-4.9 2.1-56.1 53.6-58.5 58.8-1.1 2.3-2.1 7-2.3 11.2-.6 10.2 1.5 14.9 10.5 24.5a41 41 0 0 1 7.3 9.1c0 .8-1.3 3.9-2.8 6.8-3.6 6.9-9.6 21-11.7 27.4-3.7 11.4-2.6 10.5-12.8 10.5-12.9 0-20.5 2.7-27.2 9.7-5.6 5.8-7 10.6-7.5 25.8l-.5 14h-78V664c0-87.7 0-88.3 5.7-109.5 3.3-12.2 5.2-17.3 11.8-31q24.8-51.5 87.5-89.4A419 419 0 0 1 420 385c5.8-1.3 7.7-1.1 13.5 1.5m111.7 139.2c1.6 1.4 1.8 3.3 1.9 15.2 0 20.6 1.1 22.3 16.4 26.6 5 1.4 9.9 3 11 3.4l8 3.2c6.9 2.6 16.1 7 25.7 12.2 11.7 6.5 15.1 5.3 31.3-11.2 3.9-4 7.8-7.1 8.9-7.1s11 9 26.3 24.3C694.5 612 699 617 699 619.2s-2.3 5-10.1 12.9c-13.1 13.2-14 15.5-9.3 24.4a244 244 0 0 1 17.4 38 206 206 0 0 1 4.1 14c.9 2.9 2.7 6.2 4.7 8.2l3.3 3.3h15.3c14.3 0 15.4.1 17.2 2.1s1.9 4.3 2.2 35.3c.3 32.5.2 33.3-1.8 35.9l-2.1 2.7h-30.8l-3.3 3.3c-2 2-3.8 5.3-4.7 8.2a195 195 0 0 1-20.3 49.7q-5 8.6-2.9 14c.5 1.4 5.5 7.2 11 12.7 7.8 7.8 10.1 10.8 10.1 12.9s-4.6 7.3-24.3 26.9c-16.9 17-24.9 24.3-26.4 24.3q-2.4-.1-13.7-11c-11-10.6-11.7-11-15.8-11a22 22 0 0 0-10.3 3.5A197 197 0 0 1 562 949c-8.2 2.3-10 3.2-12.3 6.4-2 2.8-2.2 4.5-2.5 18.1-.3 11.9-.7 15.4-1.9 16.7-1.5 1.7-4.5 1.8-35.6 1.8-30.3 0-34.2-.2-35.9-1.7-1.6-1.4-1.8-3.3-1.8-15.3 0-20-1.4-22.4-14.7-26.1-12-3.2-17.2-5-28.3-10.1-6.5-2.9-10-4.7-19.9-9.9-5.5-3-10.8-3.7-14.2-1.8-1.1.6-6.5 5.5-12 11-6.4 6.4-10.8 9.9-12.2 9.9s-9.8-7.7-26.4-24.2C325.2 904.8 320 899 320 897c0-1.9 2.2-4.7 8.1-10.5q13.8-13.7 13.9-19.4a44 44 0 0 0-5-11.5l-5-9.2-2.4-5.6A179 179 0 0 1 319 812c-4.1-15.1-5.6-16-25-16-10.5-.1-15-.4-16.2-1.4-1.7-1.2-1.8-4.2-1.8-36.1 0-31 .2-35 1.7-36.7 1.4-1.6 3.3-1.8 16.6-1.8 14.2 0 15.2-.1 18.1-2.4s3.9-4.1 6.6-13.6c4.2-14.6 7.8-23.5 16.2-39.7A97 97 0 0 0 342 649c0-3.5-1.9-6.1-12.1-16.7-7.8-8-9.9-10.8-9.9-13 0-2.4 4-6.8 24.3-27.1 15.3-15.2 25-24.2 26.3-24.2 1.1 0 6.6 4.5 13.2 11 11 10.7 11.4 11 15.8 11 3.3 0 6.2-.9 10.2-3.1a187 187 0 0 1 47.5-19.8c13.3-3.7 14.7-6.1 14.7-25.9 0-11.2.3-13.9 1.7-15.4 1.5-1.7 3.9-1.8 35.6-1.8 30.3 0 34.2.2 35.9 1.7m-52.7 91.9A144 144 0 0 0 393 678a179 179 0 0 0-16 30.5 144 144 0 0 0-.1 99 219 219 0 0 0 18.3 33.7c5.4 7.3 17.7 20.4 24.4 26 9.1 7.5 35.4 22.8 39.4 22.8q1.1 0 2.8 1a144.1 144.1 0 0 0 91 1.4c9.7-3.1 10-3.3 20.2-8.4a141 141 0 0 0 69.8-79.5c6.2-18.6 7.5-27 7.5-46.5a119 119 0 0 0-6.5-43.5A141 141 0 0 0 573 632a127 127 0 0 0-36-12.6c-6.4-1.5-36.2-2.7-44.5-1.8m44 26.3a120 120 0 0 1 88.6 93.1c.8 3.4 1.2 11.7 1.2 21.5-.1 16.9-1 22.5-5.9 37.4a158 158 0 0 1-14.4 28.9l-4.4 5.7a144 144 0 0 1-23.4 22.5c-26.9 19.4-64.7 27.2-94.7 19.4-3.3-.9-7.2-1.8-8.8-2.1-1.5-.3-3-.9-3.3-1.4q-.6-.8-2.1-.9c-2.9 0-21.7-9.9-28.8-15.2a129 129 0 0 1-28.2-29.4 97 97 0 0 1-13.2-26 117.5 117.5 0 0 1 95.4-155.8c1.7-.2 10-.3 18.5-.1 12 .2 17.3.8 23.5 2.4m-33 49.9c-5.2 3.2-5.5 4.8-5.8 29.2l-.2 22.5-23 .5q-23 .5-25.1 1.7c-7.2 4.1-7.2 16.5 0 20.6q2.1 1.2 25.1 1.7l23 .5.3 22.8c.3 24.9.6 26.3 6.3 29.3 3.6 1.8 6.8 1.8 10.8-.2 6-3 6.6-5.4 6.9-30.2l.3-22.2h22c17.7 0 22.6-.3 24.9-1.5 5.8-3 7.7-11.3 4.1-16.9-3.5-5.3-4.8-5.5-28.8-5.6h-22.2l-.3-22.3c-.3-24.9-.9-26.9-7.5-30.1-4.4-2.1-7.1-2-10.8.2" />
+    </svg>
+  );
+}
 export default function Home() {
   return (
     <main>
@@ -40,16 +70,17 @@ export default function Home() {
       <section className="container home-hero" style={{ paddingTop: '5rem', paddingBottom: '4rem' }}>
         <div className="hero-grid">
           <div>
-            <p className="hero-eyebrow">We design. We build. We grow brands.</p>
+            <p className="hero-eyebrow">Digital Products & Growth</p>
 
             <h1 style={{ fontSize: 'clamp(2.4rem, 5vw, 3.4rem)' }}>
-              Fast websites & apps.<br />No bloat, no templates, no excuses.
+              Websites & apps engineered<br />to win you more clients.
             </h1>
 
             <div className="section-divider" />
 
             <p className="hero-subtext">
-              Built with whatever gets the job done right clean code, quick load times, designed to convert visitors, not just look nice.
+              
+              We design high-performing websites, custom apps, and automated digital systems that build trust, capture qualified leads, and turn visitors into predictable revenue.
             </p>
 
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
@@ -84,125 +115,124 @@ export default function Home() {
           </div>
 
           <div className="services-grid" style={{ marginTop: '3rem' }}>
-            {[
-              { image: webDevImg, title: 'Web Development', desc: 'Fast, responsive and modern websites that drive results.' },
-              { image: appDevImg, title: 'App Development', desc: 'Custom mobile apps for iOS & Android that scale.' },
-              { image: uiuxImg, title: 'UI/UX Design', desc: 'Beautiful and intuitive designs that create amazing experiences.' },
-              { image: brandingImg, title: 'Branding', desc: 'Strong brand identity that connects and leaves a lasting mark.' },
-              { image: ecommerceImg, title: 'E-commerce', desc: 'Online stores that convert visitors into loyal customers.' },
-              { image: seoImg, title: 'SEO & Marketing', desc: 'Smart strategies to increase visibility and drive real growth.' },
-            ].map(({ image, title, desc }, i) => (
-              <ScrollReveal key={title} className="service-card-reveal" style={{ transitionDelay: `${(i % 3) * 90}ms` }}>
-                <Link href="/services" className="service-tile service-card-bg-link" style={{ backgroundImage: `url(${image.src})` }}>
-                  <div className="service-card-overlay" />
-                  <div className="service-card-body service-card-body-overlay">
-                    <h3>{title}</h3>
-                    <p>{desc}</p>
-                  </div>
-                </Link>
-              </ScrollReveal>
-            ))}
-          </div>
+  {[
+    {
+      image: webDevImg,
+      title: 'Web Development',
+      desc: 'High-speed, search-optimized websites built to capture leads and close deals.'
+    },
+    {
+      image: appDevImg,
+      title: 'App Development',
+      desc: 'Custom iOS & Android apps designed for frictionless user retention and scale.'
+    },
+    {
+      image: uiuxImg,
+      title: 'UI/UX Design',
+      desc: 'Intuitive user flows that eliminate drop-offs and maximize conversion rates.'
+    },
+    {
+      image: brandingImg,
+      title: 'Branding & Identity',
+      desc: 'Distinct visual identity systems that position your business as a market leader.'
+    },
+    {
+      image: ecommerceImg,
+      title: 'E-commerce Solutions',
+      desc: 'Streamlined online stores with seamless mobile checkout and M-Pesa integration.'
+    },
+    {
+      image: seoImg,
+      title: 'SEO & Growth Strategy',
+      desc: 'Targeted search ranking to get your brand in front of ready-to-buy clients.'
+    },
+  ].map(({ image, title, desc }, i) => (
+    <ScrollReveal
+      key={title}
+      className="service-card-reveal"
+      style={{ transitionDelay: `${(i % 3) * 90}ms` }}
+    >
+      <Link
+        href="/services"
+        className="service-tile service-card-bg-link"
+        style={{ backgroundImage: `url(${image.src})` }}
+      >
+        <div className="service-card-overlay" />
+
+        <div className="service-card-body service-card-body-overlay">
+          <h3>{title}</h3>
+          <p>{desc}</p>
+        </div>
+      </Link>
+    </ScrollReveal>
+  ))}
+</div>
         </section>
       </ScrollReveal>
 
-      {/* ── WHY CHOOSE US ────────────────────────────────────────────────── */}
-      <ScrollReveal>
-        <section className="container why-choose-section">
-          <div className="why-choose-grid">
-            <div>
-              <p className="hero-eyebrow">Why choose us</p>
-              <h2 style={{ fontSize: 'clamp(1.6rem, 5vw, 2rem)', lineHeight: 1.25 }}>
-                We don&apos;t just design, we create solutions.
-              </h2>
-              <div className="section-divider" />
+ {/* ── WHY CHOOSE US ────────────────────────────────────────────────── */}
 
-              <div className="why-choose-list">
-                {[
-                  { icon: Target, title: 'Results Driven', desc: 'We focus on solutions that bring measurable results.' },
-                  { icon: Users, title: 'Client Focused', desc: 'Your satisfaction is our top priority, always.' },
-                  { icon: Clock, title: 'On Time Delivery', desc: 'We respect deadlines and deliver quality on time.' },
-                  { icon: Lightbulb, title: 'Creative & Unique', desc: 'Original ideas and designs tailored to your brand.' },
-                ].map(({ icon: Icon, title, desc }) => (
-                  <div key={title} className="why-choose-item">
-                    <div className="why-choose-icon">
-                      <Icon size={16} />
-                    </div>
-                    <div>
-                      <h3>{title}</h3>
-                      <p>{desc}</p>
-                    </div>
-                  </div>
-                ))}
+
+
+<ScrollReveal>
+  <section className="container why-choose-section">
+    <div className="why-choose-grid">
+      <div>
+        <p className="hero-eyebrow">Why choose us</p>
+        <h2 style={{ fontSize: 'clamp(1.6rem, 5vw, 2rem)', lineHeight: 1.25 }}>
+          Built for commercial impact, not just aesthetics.
+        </h2>
+        <div className="section-divider" />
+
+        <div className="why-choose-list">
+          {[
+            {
+              icon: RevenueIcon,
+              title: 'Revenue & Lead Focused',
+              desc: 'Every layout, button, and user flow is engineered to convert traffic into real sales inquiries.'
+            },
+            {
+              icon: PinIcon,
+              title: 'Local Context, Global Quality',
+              desc: 'Seamless local payment integrations (M-Pesa/Airtel) combined with global design standards.'
+            },
+            {
+              icon: CalendarCheckIcon,
+              title: 'Predictable Timelines',
+              desc: 'Clear sprint milestones and transparent communication with zero unexpected delays.'
+            },
+            {
+              icon: IncorporationIcon,
+              title: 'End-to-End Ownership',
+              desc: 'From initial brand concept to cloud deployment and ongoing optimization, we handle the entire stack.'
+            },
+          ].map(({ icon: Icon, title, desc }) => (
+            <div key={title} className="why-choose-item">
+              <div className="why-choose-icon">
+                <Icon size={16} />
+              </div>
+              <div>
+                <h3>{title}</h3>
+                <p>{desc}</p>
               </div>
             </div>
+          ))}
+        </div>
+      </div>
 
-            <div className="why-choose-image">
-              <Image
-                src={designsPhoto}
-                alt="Zuri Creative Designs — branding collage"
-                sizes="(max-width: 900px) 100vw, 50vw"
-                style={{ width: '100%', height: 'auto' }}
-              />
-            </div>
-          </div>
-        </section>
-      </ScrollReveal>
+      <div className="why-choose-image">
+        <Image
+          src={designsPhoto}
+          alt="Zuri Creative Designs — branding collage"
+          sizes="(max-width: 900px) 100vw, 50vw"
+          style={{ width: '100%', height: 'auto' }}
+        />
+      </div>
+    </div>
+  </section>
+</ScrollReveal>
 
-      {/* ── FEATURED WORK ────────────────────────────────────────────────── */}
-      <ScrollReveal>
-        <section className="container portfolio-section">
-          <div className="services-header" style={{ textAlign: 'center', maxWidth: '100%' }}>
-            <p className="hero-eyebrow" style={{ marginBottom: '0.4rem' }}>Recent work</p>
-            <h2 style={{ fontSize: 'clamp(1.7rem, 5vw, 2.2rem)' }}>Projects We&apos;ve Delivered</h2>
-            <div className="section-divider" style={{ margin: '0.8rem auto 0' }} />
-          </div>
-
-          <div className="portfolio-grid" style={{ marginTop: '3rem' }}>
-            <div className="portfolio-card">
-              <Image src={primehubImg} alt="PrimeHub Properties" className="portfolio-image" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
-              <div className="portfolio-content">
-                <span className="portfolio-tag">Real Estate</span>
-                <h2>PrimeHub Properties</h2>
-                <p>A real estate marketplace with stunning property visuals and a mortgage calculator.</p>
-                <a href="https://prime-hub-properties.vercel.app/" target="_blank" rel="noopener noreferrer" className="portfolio-link">
-                  View Project →
-                </a>
-              </div>
-            </div>
-
-            <div className="portfolio-card">
-              <Image src={manyattaImg} alt="Manyatta Grill" className="portfolio-image" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
-              <div className="portfolio-content">
-                <span className="portfolio-tag">Restaurant</span>
-                <h2>Manyatta Grill</h2>
-                <p>A nyama choma restaurant site with authentication, a role-based dashboard, and an animated menu.</p>
-                <a href="https://manyatta-grill.vercel.app/" target="_blank" rel="noopener noreferrer" className="portfolio-link">
-                  View Project →
-                </a>
-              </div>
-            </div>
-
-            <div className="portfolio-card">
-              <Image src={wildfireImg} alt="Wildfire Adventures" className="portfolio-image" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
-              <div className="portfolio-content">
-                <span className="portfolio-tag">Tourism</span>
-                <h2>Wildfire Adventures</h2>
-                <p>A safari and beach tourism site with multi-currency and multilingual support.</p>
-                <a href="https://wildfire-adventures.vercel.app/" target="_blank" rel="noopener noreferrer" className="portfolio-link">
-                  View Project →
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
-            <Link href="/work" className="btn-outline">
-              View All Work <span>→</span>
-            </Link>
-          </div>
-        </section>
-      </ScrollReveal>
+     
 
       {/* ── CTA BANNER ───────────────────────────────────────────────────── */}
       <ScrollReveal>
@@ -222,8 +252,11 @@ export default function Home() {
                 <Send size={18} color="#fff" />
               </div>
               <div>
-                <h3 style={{ color: '#fff' }}>Ready to build something amazing?</h3>
-                <p style={{ color: 'rgba(255,255,255,0.8)' }}>Let&apos;s turn your ideas into powerful digital solutions.</p>
+              
+<h3 style={{ color: '#fff' }}>Ready to turn your website into a sales engine?</h3>
+<p style={{ color: 'rgba(255,255,255,0.8)' }}>
+  Let&apos;s map out a modern digital solution that grows your customer base.
+</p>
               </div>
             </div>
 
@@ -242,8 +275,8 @@ export default function Home() {
       <ScrollReveal>
         <section id="contact" className="container" style={{ paddingTop: '4rem', paddingBottom: '4rem' }}>
           <div className="services-header" style={{ textAlign: 'center', maxWidth: '100%' }}>
-            <p className="hero-eyebrow" style={{ marginBottom: '0.4rem' }}>Get in touch</p>
-            <h2 style={{ fontSize: 'clamp(1.7rem, 5vw, 2.2rem)' }}>Let&apos;s Talk About Your Project</h2>
+           <p className="hero-eyebrow" style={{ marginBottom: '0.4rem' }}>Start your project</p>
+<h2 style={{ fontSize: 'clamp(1.7rem, 5vw, 2.2rem)' }}>Tell Us About Your Vision</h2>
             <div className="section-divider" style={{ margin: '0.8rem auto 0' }} />
           </div>
 
