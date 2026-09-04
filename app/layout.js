@@ -55,9 +55,16 @@ export const metadata = {
       "We build modern websites and software that help businesses grow — for clients in Kenya and worldwide.",
     images: ["/og-image.jpg"],
   },
+  manifest: "/site.webmanifest",
   icons: {
-    icon: "/favicon.ico",
-    // apple: "/apple-touch-icon.png", // uncomment once this exists in /public
+    icon: [
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+      { url: "/favicon-48x48.png", type: "image/png", sizes: "48x48" },
+      { url: "/favicon-192x192.png", type: "image/png", sizes: "192x192" },
+      { url: "/favicon.ico", type: "image/x-icon" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: [{ url: "/apple-touch-icon.png", type: "image/png", sizes: "180x180" }],
   },
 };
 
